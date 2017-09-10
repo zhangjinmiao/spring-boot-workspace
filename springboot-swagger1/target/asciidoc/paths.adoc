@@ -1,0 +1,168 @@
+== Resources
+=== UserApi
+:hardbreaks:
+用户管理操作API
+
+==== 删除用户
+----
+POST /api/users/delete/{id}
+----
+
+===== Description
+:hardbreaks:
+根据url的id来指定删除对象
+
+===== Parameters
+[options="header"]
+|===
+|Type|Name|Description|Required|Schema|Default
+|BodyParameter|id|用户ID|true|<<Long>>|
+|===
+
+===== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+===== Consumes
+
+* application/json
+
+===== Produces
+
+* application/json
+
+==== 获取用户列表
+----
+GET /api/users
+----
+
+===== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|<<用户信息>> array
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+===== Consumes
+
+* application/json
+
+===== Produces
+
+* application/json
+
+==== 创建用户
+----
+POST /api/users
+----
+
+===== Description
+:hardbreaks:
+根据User对象创建用户
+
+===== Parameters
+[options="header"]
+|===
+|Type|Name|Description|Required|Schema|Default
+|BodyParameter|user|用户详细实体user|true|<<User>>|
+|===
+
+===== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+===== Consumes
+
+* application/json
+
+===== Produces
+
+* application/json
+
+==== 获取用户详细信息
+----
+GET /api/users/{id}
+----
+
+===== Description
+:hardbreaks:
+根据url的id来获取用户详细信息
+
+===== Parameters
+[options="header"]
+|===
+|Type|Name|Description|Required|Schema|Default
+|BodyParameter|id|用户ID|true|<<Long>>|
+|===
+
+===== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|<<用户信息>>
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+===== Consumes
+
+* application/json
+
+===== Produces
+
+* application/json
+
+==== 更新用户详细信息
+----
+POST /api/users/{id}
+----
+
+===== Description
+:hardbreaks:
+根据url的id来指定更新对象，并根据传过来的user信息来更新用户详细信息
+
+===== Parameters
+[options="header"]
+|===
+|Type|Name|Description|Required|Schema|Default
+|BodyParameter|id|用户ID|true|<<Long>>|
+|BodyParameter|user|用户详细实体user|true|<<User>>|
+|===
+
+===== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+===== Consumes
+
+* application/json
+
+===== Produces
+
+* application/json
+

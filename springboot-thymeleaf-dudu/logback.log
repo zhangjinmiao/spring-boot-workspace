@@ -1,0 +1,249 @@
+14:42:56.153 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Starting SpringbootThymeleafDuduApplication on admin-PC with PID 7516 (E:\workspace-jimzhang\springboot-thymeleaf-dudu\target\classes started by admin in E:\workspace-jimzhang\springboot-thymeleaf-dudu)
+14:42:56.156 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - No active profile set, falling back to default profiles: default
+14:42:56.612 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+14:42:56.744 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43675348: startup date [Wed Jul 26 14:42:56 CST 2017]; root of context hierarchy
+14:42:58.160 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8089 (http)
+14:42:58.213 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:42:58.245 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+14:42:58.452 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:42:58.453 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1708 ms
+14:42:58.645 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:42:58.649 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:42:58.649 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:42:58.649 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:42:58.649 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:42:59.228 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43675348: startup date [Wed Jul 26 14:42:56 CST 2017]; root of context hierarchy
+14:42:59.347 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index()
+14:42:59.347 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/learn]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index2()
+14:42:59.348 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jimzhang.controller.LearnResourceController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:42:59.350 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:42:59.350 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:42:59.361 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/toLogin] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+14:42:59.396 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/my/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:59.397 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:59.397 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:42:59.477 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:43:00.127 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:43:00.193 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+14:43:00.238 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+14:43:00.254 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14:43:00.312 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8089 (http)
+14:43:00.341 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Started SpringbootThymeleafDuduApplication in 4.572 seconds (JVM running for 10.785)
+14:44:43.376 logback [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:44:43.376 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+14:44:43.437 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+14:44:43.542 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+14:44:43.608 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+14:44:43.608 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+14:44:43.608 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+14:44:43.608 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+14:44:43.612 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+14:44:43.613 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+14:44:47.160 logback [http-nio-8089-exec-8] INFO  c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 info
+14:44:47.160 logback [http-nio-8089-exec-8] WARN  c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 warn
+14:44:47.160 logback [http-nio-8089-exec-8] ERROR c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 error
+14:56:21.117 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Starting SpringbootThymeleafDuduApplication on admin-PC with PID 6284 (E:\workspace-jimzhang\springboot-thymeleaf-dudu\target\classes started by admin in E:\workspace-jimzhang\springboot-thymeleaf-dudu)
+14:56:21.119 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - No active profile set, falling back to default profiles: default
+14:56:21.358 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+14:56:21.569 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5906ebcb: startup date [Wed Jul 26 14:56:21 CST 2017]; root of context hierarchy
+14:56:22.923 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8089 (http)
+14:56:22.933 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:56:22.934 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+14:56:23.007 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:56:23.007 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1438 ms
+14:56:23.134 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:56:23.138 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:56:23.139 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:56:23.139 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:56:23.139 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:56:23.444 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5906ebcb: startup date [Wed Jul 26 14:56:21 CST 2017]; root of context hierarchy
+14:56:23.504 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index()
+14:56:23.506 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/learn]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index2()
+14:56:23.508 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jimzhang.controller.LearnResourceController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:56:23.511 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:56:23.512 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:56:23.526 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/toLogin] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+14:56:23.546 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/my/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:56:23.547 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:56:23.547 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:56:23.584 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:56:23.971 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:56:23.985 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+14:56:23.994 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+14:56:24.007 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14:56:24.028 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8089 (http)
+14:56:24.033 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Started SpringbootThymeleafDuduApplication in 3.292 seconds (JVM running for 3.71)
+14:56:53.719 logback [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:56:53.719 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+14:56:53.743 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+14:56:53.798 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+14:56:53.845 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+14:56:53.845 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+14:56:53.846 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+14:56:53.846 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+14:56:53.850 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+14:56:53.850 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+14:56:57.515 logback [http-nio-8089-exec-10] INFO  c.j.c.LearnResourceController - 日志输出 info
+14:56:57.515 logback [http-nio-8089-exec-10] WARN  c.j.c.LearnResourceController - 日志输出 warn
+14:56:57.515 logback [http-nio-8089-exec-10] ERROR c.j.c.LearnResourceController - 日志输出 error
+14:57:22.167 logback [FileSystemWatcher: files=#6 cl=sun.misc.Launcher$AppClassLoader@18b4aac2] ERROR o.springsource.loaded.ReloadableType - Unable to find regeneration methods for cglib proxies - proxies will be out of date for this type
+14:57:22.168 logback [FileSystemWatcher: files=#6 cl=sun.misc.Launcher$AppClassLoader@18b4aac2] ERROR o.springsource.loaded.ReloadableType - Unable to find regeneration methods for cglib proxies - proxies will be out of date for this type
+14:58:14.592 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Starting SpringbootThymeleafDuduApplication on admin-PC with PID 9816 (E:\workspace-jimzhang\springboot-thymeleaf-dudu\target\classes started by admin in E:\workspace-jimzhang\springboot-thymeleaf-dudu)
+14:58:14.594 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - No active profile set, falling back to default profiles: default
+14:58:14.858 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25e384f3: startup date [Wed Jul 26 14:58:14 CST 2017]; root of context hierarchy
+14:58:14.861 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+14:58:16.051 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8089 (http)
+14:58:16.060 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:58:16.061 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+14:58:16.137 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:58:16.137 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1279 ms
+14:58:16.240 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+14:58:16.244 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+14:58:16.245 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+14:58:16.245 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+14:58:16.245 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+14:58:16.506 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25e384f3: startup date [Wed Jul 26 14:58:14 CST 2017]; root of context hierarchy
+14:58:16.574 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index()
+14:58:16.575 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/learn]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index2()
+14:58:16.575 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jimzhang.controller.LearnResourceController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:58:16.576 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+14:58:16.577 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+14:58:16.591 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/toLogin] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+14:58:16.601 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/my/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:58:16.601 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:58:16.601 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:58:16.635 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+14:58:16.985 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14:58:17.000 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+14:58:17.008 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+14:58:17.019 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14:58:17.037 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8089 (http)
+14:58:17.043 logback [main] INFO  c.j.SpringbootThymeleafDuduApplication - Started SpringbootThymeleafDuduApplication in 2.83 seconds (JVM running for 4.958)
+14:58:35.022 logback [http-nio-8089-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+14:58:35.022 logback [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+14:58:35.038 logback [http-nio-8089-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+14:58:35.097 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+14:58:35.144 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+14:58:35.144 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+14:58:35.144 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+14:58:35.144 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+14:58:35.150 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+14:58:35.151 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+14:58:39.213 logback [http-nio-8089-exec-1] INFO  c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 info
+14:58:39.214 logback [http-nio-8089-exec-1] WARN  c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 warn
+14:58:39.214 logback [http-nio-8089-exec-1] ERROR c.j.c.LearnResourceController - 鏃ュ織杈撳嚭 error
+17:09:49.571 logback [restartedMain] INFO  c.j.SpringbootThymeleafDuduApplication - Starting SpringbootThymeleafDuduApplication on admin-PC with PID 15280 (E:\workspace-jimzhang\springboot-thymeleaf-dudu\target\classes started by admin in E:\workspace-jimzhang\springboot-thymeleaf-dudu)
+17:09:49.583 logback [restartedMain] INFO  c.j.SpringbootThymeleafDuduApplication - No active profile set, falling back to default profiles: default
+17:09:49.832 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+17:09:49.914 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61eb741f: startup date [Wed Jul 26 17:09:49 CST 2017]; root of context hierarchy
+17:09:51.241 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8089 (http)
+17:09:51.250 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:09:51.252 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+17:09:51.325 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:09:51.326 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1411 ms
+17:09:51.480 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:09:51.483 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:09:51.484 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:09:51.484 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:09:51.484 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:09:51.748 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61eb741f: startup date [Wed Jul 26 17:09:49 CST 2017]; root of context hierarchy
+17:09:51.801 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index()
+17:09:51.802 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/learn]}" onto public org.springframework.web.servlet.ModelAndView com.jimzhang.controller.LearnResourceController.index2()
+17:09:51.802 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jimzhang.controller.LearnResourceController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:09:51.804 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:09:51.804 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:09:51.824 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/toLogin] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:09:51.837 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/my/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:09:51.837 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:09:51.837 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:09:51.876 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:09:52.279 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:09:52.316 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:09:52.332 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+17:09:52.341 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+17:09:52.356 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:09:52.373 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8089 (http)
+17:09:52.378 logback [restartedMain] INFO  c.j.SpringbootThymeleafDuduApplication - Started SpringbootThymeleafDuduApplication in 3.084 seconds (JVM running for 3.395)
+17:09:55.468 logback [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:09:55.469 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:09:55.481 logback [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+17:09:55.524 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+17:09:55.653 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+17:09:55.653 logback [http-nio-8089-exec-2] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+17:09:55.654 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+17:09:55.654 logback [http-nio-8089-exec-2] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+17:09:55.659 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+17:09:55.659 logback [http-nio-8089-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+17:09:59.447 logback [http-nio-8089-exec-8] INFO  c.j.c.LearnResourceController - 日志输出 info
+17:09:59.447 logback [http-nio-8089-exec-8] WARN  c.j.c.LearnResourceController - 日志输出 warn
+17:09:59.447 logback [http-nio-8089-exec-8] ERROR c.j.c.LearnResourceController - 日志输出 error
+17:10:26.476 logback [Thread-6] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61eb741f: startup date [Wed Jul 26 17:09:49 CST 2017]; root of context hierarchy
+17:10:26.477 logback [Thread-6] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
