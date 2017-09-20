@@ -16,3 +16,4 @@
 ## 数据缓存系列
 - springboot-ehcache-3x
 - springboot-ehcache
+- springboot-redis
