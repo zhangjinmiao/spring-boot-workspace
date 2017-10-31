@@ -3,14 +3,14 @@
 记录我的springboot学习之路 ——jimzhang 
 
 ## 基础原理
-1、[核心](https://www.zybuluo.com/javazjm/note/663082)
-2、[运行原理](https://www.zybuluo.com/javazjm/note/664854)
+1、 [核心](https://www.zybuluo.com/javazjm/note/663082)
+2、 [运行原理](https://www.zybuluo.com/javazjm/note/664854)
 
 ## Web应用系列
-1、[web开发之web配置](https://www.zybuluo.com/javazjm/note/827060)
-3、springboot-thymeleaf-dudu：[web开发之Thymeleaf](https://www.zybuluo.com/javazjm/note/669064)
-4、springboot-jsp-dudu：[web开发之JSP](https://www.zybuluo.com/javazjm/note/827058)
-5、springboot-exception：[统一异常处理](https://www.zybuluo.com/javazjm/note/838031)
+1、 [web开发之web配置](https://www.zybuluo.com/javazjm/note/827060)
+3、 springboot-thymeleaf-dudu：[web开发之Thymeleaf](https://www.zybuluo.com/javazjm/note/669064)
+4、 springboot-jsp-dudu：[web开发之JSP](https://www.zybuluo.com/javazjm/note/827058)
+5、 springboot-exception：[统一异常处理](https://www.zybuluo.com/javazjm/note/838031)
 
 ## 应用监控系列
 1、[springboot-actuator](https://www.zybuluo.com/javazjm/note/835135)
@@ -25,9 +25,9 @@
 - springboot Redis Cache
 
 ## 消息队列系列（MQ）
-1、[Springboot RabbitMQ]()
-2、[Springboot RocketMQ]()
-3、[Springboot Kafka]()
+1、 [Springboot RabbitMQ]()
+2、 [Springboot RocketMQ]()
+3、 [Springboot Kafka]()
 
 ## 实用技术系列
 - Springboot 定时
