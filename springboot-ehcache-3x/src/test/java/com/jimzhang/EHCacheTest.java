@@ -30,9 +30,10 @@ public class EHCacheTest extends ApplicationTests {
     }
 
     @Test
-    public void test() {
+    public void test() throws InterruptedException {
         Student student = studentService.findById(1L);
         logger.info("学生信息----:" + student.toString());
+         Thread.sleep(7000L);
         Student student2 = studentService.findById(1L);
         logger.info("学生信息2----:" + student2.toString());
 

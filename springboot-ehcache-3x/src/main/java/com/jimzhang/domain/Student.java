@@ -4,13 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * Created by admin on 2017/7/31.
  */
 @Entity
 @Table(name = "t_student")
-public class Student {
+public class Student implements Serializable{
 
     @Id
     @GeneratedValue

@@ -61,4 +61,17 @@ public class TestRedis extends SpringbootRedisApplicationTests {
 
     }
 
+    @Autowired
+    private UserService userService;
+
+    @Test
+    public void testSer(){
+        User user = new User("张无忌", "123456", "itzjm@qq.com", "zhangwuji", new Date());
+        User user1 = userService.addUser3(user);
+        System.out.println(user1.getId()+"=======");// 16
+        User userById = userService.getUserById(1L);
+        System.out.println(userById);
+
+    }
+
 }
