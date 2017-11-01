@@ -33,7 +33,7 @@
 - Springboot 定时
 - [Spring-boot-quartz]()
 - [Springboot 异步方法]()
-- [Springboot 发送邮件]()
+- [Springboot 发送邮件](https://www.zybuluo.com/javazjm/note/936386)
 - [Springboot dubbo 整合]()
 - [Springboot shiro 整合]()
 
