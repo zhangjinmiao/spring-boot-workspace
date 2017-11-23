@@ -25,9 +25,9 @@
 - springboot Redis Cache
 
 ## 消息队列系列（MQ）
-1、 [Springboot RabbitMQ]()
-2、 [Springboot RocketMQ]()
-3、 [Springboot Kafka]()
+1. [Springboot RabbitMQ]()
+2. [Springboot RocketMQ]()
+3.  [Springboot Kafka]()
 
 ## 实用技术系列
 - Springboot 定时
@@ -35,7 +35,7 @@
 - [Springboot 异步方法]()
 - [Springboot 发送邮件](https://www.zybuluo.com/javazjm/note/936386)
 - [Springboot dubbo 整合]()
-- [Springboot shiro 整合]()
+- springboot-shiro [Springboot shiro 整合]()
 
 
 ## 附录：
