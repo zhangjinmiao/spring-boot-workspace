@@ -20,6 +20,13 @@ import javax.annotation.Resource;
 public class MyShiroRealm extends AuthorizingRealm {
     @Resource
     private UserInfoService userInfoService;
+
+    /**
+     * 如果只是简单的身份认证没有权限的控制的话，可直接返回null
+     * 当访问页面时，链接配置了相应权限（@RequiresPermissions("userInfo:view")）或shiro标签（<shiro:hasPermission name="userInfo:add" />）才执行此方法
+     * @param principals
+     * @return
+     */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
         System.out.println("权限配置-->MyShiroRealm.doGetAuthorizationInfo()");
@@ -34,7 +41,14 @@ public class MyShiroRealm extends AuthorizingRealm {
         return authorizationInfo;
     }
 
-    /*主要是用来进行身份认证的，也就是说验证用户输入的账号和密码是否正确。*/
+    /**
+     * 主要是用来进行身份认证的，也就是说验证用户输入的账号和密码是否正确。
+     *  1、检查提交的进行认证的令牌信息
+        2、根据令牌信息从数据源(通常为数据库)中获取用户信息
+        3、对用户信息进行匹配验证。
+        4、验证通过将返回一个封装了用户信息的AuthenticationInfo实例。
+        5、验证失败则抛出AuthenticationException异常信息。
+     */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token)
             throws AuthenticationException {

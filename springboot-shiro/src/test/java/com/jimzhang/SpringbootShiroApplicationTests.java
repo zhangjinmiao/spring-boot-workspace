@@ -11,6 +11,7 @@ public class SpringbootShiroApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
