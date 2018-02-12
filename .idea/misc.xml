@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-multi-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

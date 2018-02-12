@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/spring-boot-multi-mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/spring-boot-multi-mybatis-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-workspace.iml" filepath="$PROJECT_DIR$/.idea/springboot-workspace.iml" />
+    </modules>
+  </component>
+</project>
