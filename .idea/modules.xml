@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/spring-boot-redis-data-cache.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/spring-boot-redis-data-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-workspace.iml" filepath="$PROJECT_DIR$/.idea/springboot-workspace.iml" />
     </modules>
   </component>

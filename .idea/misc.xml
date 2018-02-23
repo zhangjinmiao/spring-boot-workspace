@@ -11,6 +11,10 @@
         <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-multi-mybatis-druid/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/springboot-redis-1/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/pom.xml" />
       </list>
     </option>
   </component>

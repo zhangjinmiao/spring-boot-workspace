@@ -10,6 +10,10 @@
         <module name="spring-boot-mybatis-annotation" />
         <module name="spring-boot-mybatis-druid" />
         <module name="spring-boot-mybatis-xml" />
+        <module name="spring-boot-redis" />
+        <module name="spring-boot-redis-data-cache" />
+        <module name="spring-boot-redis-session" />
+        <module name="springboot-redis-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +21,10 @@
       <module name="spring-boot-mybatis-annotation" target="1.8" />
       <module name="spring-boot-mybatis-druid" target="1.8" />
       <module name="spring-boot-mybatis-xml" target="1.8" />
+      <module name="spring-boot-redis" target="1.8" />
+      <module name="spring-boot-redis-data-cache" target="1.8" />
+      <module name="spring-boot-redis-session" target="1.8" />
+      <module name="springboot-redis-1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
