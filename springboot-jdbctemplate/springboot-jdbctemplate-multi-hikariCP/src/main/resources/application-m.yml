@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    hikari:
+      # 数据源 one （主）
+      one:
+        # 数据库配置
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8
+        username: zjm
+        password: 123456
+
+        #  连接池配置
+        #连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)，读数据库 < 写数据库
+        maximum-pool-size: 10
+        pool-name: one
+        connection-timeout: 30000
+        idle-timeout: 600000
+        #一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒以上
+        max-lifetime: 1765000
+
+
+      # 数据源 two (从)
+      two:
+        # 数据库配置
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=utf-8
+        username: zjm
+        password: 123456
+
+        #  连接池配置
+        #连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+        maximum-pool-size: 50
+        pool-name: two
+        connection-timeout: 30000
+        idle-timeout: 600000
+        #一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒以上
+        max-lifetime: 1765000
+        read-only: true
+
+
