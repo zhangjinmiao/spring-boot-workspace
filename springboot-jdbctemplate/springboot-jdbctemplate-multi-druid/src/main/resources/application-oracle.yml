@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    druid:
+      # 初始化大小，最小，最大链接数
+      initial-size: 3
+      min-idle: 3
+      max-active: 10
+      # 配置获取连接等待超时的时间
+      max-wait: 60000
+
+      # 配置StatFilter
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 2000
+      # 配置StatViewServlet
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
+
+      # 数据源 one
+      one:
+        # 数据库配置
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@10.6.10.57:1521/xshdb
+        username: xshmeidian
+        password: 123456
+
+        # Druid 数据源 one 配置，继承spring.datasource.druid.* 配置，相同则覆盖
+        max-active: 20
+        max-wait: 10000
+
+      # 数据源 two
+      two:
+        # 数据库配置
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=utf-8
+        username: zjm
+        password: 123456
+
+        # Druid 数据源 two 配置，继承spring.datasource.druid.* 配置，相同则覆盖
+        max-active: 30
+        max-wait: 20000
