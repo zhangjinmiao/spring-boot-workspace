@@ -6,24 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-mongodb-repository" />
+        <module name="spring-boot-mongodb-template" />
+        <module name="spring-boot-multi-mongodb" />
         <module name="spring-boot-multi-mybatis-druid" />
         <module name="spring-boot-mybatis-annotation" />
         <module name="spring-boot-mybatis-druid" />
         <module name="spring-boot-mybatis-xml" />
+        <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-redis-data-cache" />
         <module name="spring-boot-redis-session" />
+        <module name="springboot-jdbctemplate-multi-druid" />
         <module name="springboot-redis-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-boot-mongodb-repository" target="1.8" />
+      <module name="spring-boot-mongodb-template" target="1.8" />
+      <module name="spring-boot-multi-mongodb" target="1.8" />
       <module name="spring-boot-multi-mybatis-druid" target="1.8" />
       <module name="spring-boot-mybatis-annotation" target="1.8" />
       <module name="spring-boot-mybatis-druid" target="1.8" />
       <module name="spring-boot-mybatis-xml" target="1.8" />
+      <module name="spring-boot-rabbitmq" target="1.8" />
       <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-redis-data-cache" target="1.8" />
       <module name="spring-boot-redis-session" target="1.8" />
+      <module name="springboot-jdbctemplate-multi" target="1.8" />
+      <module name="springboot-jdbctemplate-multi-druid" target="1.8" />
       <module name="springboot-redis-1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
