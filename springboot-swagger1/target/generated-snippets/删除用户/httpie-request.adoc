@@ -1,4 +1,0 @@
-[source,bash]
-----
-$ http POST 'http://localhost:8080/api/users/delete/1' 'Accept:application/json'
-----

@@ -1,7 +1,0 @@
-[source,http,options="nowrap"]
-----
-POST /api/users/delete/1 HTTP/1.1
-Accept: application/json
-Host: localhost:8080
-
-----

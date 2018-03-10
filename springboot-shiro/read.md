@@ -141,21 +141,21 @@ jpa用法，直接继承CrudRepository即可
 >Shiro内置的FilterChain
 >
 | Filter Name | Class                                    |
- | ----------- | ---------------------------------------- |
- | anon        | org.apache.shiro.web.filter.authc.AnonymousFilter |
- | authc       | org.apache.shiro.web.filter.authc.FormAuthenticationFilter |
- | authcBasic  | org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter |
- | perms       | org.apache.shiro.web.filter.authz.PermissionsAuthorizationFilter |
- | port        | org.apache.shiro.web.filter.authz.PortFilter |
- | rest        | org.apache.shiro.web.filter.authz.HttpMethodPermissionFilter |
- | roles       | org.apache.shiro.web.filter.authz.RolesAuthorizationFilter |
- | ssl         | org.apache.shiro.web.filter.authz.SslFilter |
- | user        | org.apache.shiro.web.filter.authc.UserFilter |
+| ----------- | ---------------------------------------- |
+| anon        | org.apache.shiro.web.filter.authc.AnonymousFilter |
+| authc       | org.apache.shiro.web.filter.authc.FormAuthenticationFilter |
+| authcBasic  | org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter |
+| perms       | org.apache.shiro.web.filter.authz.PermissionsAuthorizationFilter |
+| port        | org.apache.shiro.web.filter.authz.PortFilter |
+| rest        | org.apache.shiro.web.filter.authz.HttpMethodPermissionFilter |
+| roles       | org.apache.shiro.web.filter.authz.RolesAuthorizationFilter |
+| ssl         | org.apache.shiro.web.filter.authz.SslFilter |
+| user        | org.apache.shiro.web.filter.authc.UserFilter |
 
- - anon:所有url都都可以匿名访问
- - authc: 需要认证才能进行访问
- - user:配置记住我或认证通过可以访问
- 
+- anon:所有url都都可以匿名访问
+- authc: 需要认证才能进行访问
+- user:配置记住我或认证通过可以访问
+
 **MyShiroRealm** 
 
 登录认证的实现
@@ -209,3 +209,5 @@ jpa用法，直接继承CrudRepository即可
 - [开涛哥的《跟我学Shiro》教程](http://jinnianshilongnian.iteye.com/blog/2018936/)
 - [Apache Shiro 官方文档（中文版）](https://github.com/greycode/shiro)
 - [waylau](https://github.com/waylau/apache-shiro-1.2.x-reference)
+- [springboot-shiro-mybatis](http://blog.csdn.net/poorcoder_/article/details/71374002)
+
