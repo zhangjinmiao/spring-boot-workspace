@@ -20,6 +20,7 @@
         <module name="spring-boot-redis" />
         <module name="spring-boot-redis-data-cache" />
         <module name="spring-boot-redis-session" />
+        <module name="springboot-async" />
         <module name="springboot-jdbctemplate-multi-druid" />
         <module name="springboot-redis-1" />
       </profile>
@@ -39,6 +40,7 @@
       <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-redis-data-cache" target="1.8" />
       <module name="spring-boot-redis-session" target="1.8" />
+      <module name="springboot-async" target="1.8" />
       <module name="springboot-jdbctemplate-multi" target="1.8" />
       <module name="springboot-jdbctemplate-multi-druid" target="1.8" />
       <module name="springboot-redis-1" target="1.8" />
