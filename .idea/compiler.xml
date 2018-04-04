@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-dubbo-api" />
+        <module name="spring-boot-dubbo-consumer" />
+        <module name="spring-boot-dubbo-provider" />
         <module name="spring-boot-mongodb-repository" />
         <module name="spring-boot-mongodb-template" />
         <module name="spring-boot-multi-mongodb" />
@@ -22,6 +25,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-boot-dubbo-api" target="1.8" />
+      <module name="spring-boot-dubbo-consumer" target="1.8" />
+      <module name="spring-boot-dubbo-provider" target="1.8" />
       <module name="spring-boot-mongodb-repository" target="1.8" />
       <module name="spring-boot-mongodb-template" target="1.8" />
       <module name="spring-boot-multi-mongodb" target="1.8" />

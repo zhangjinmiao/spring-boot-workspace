@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$//demo.iml" filepath="$PROJECT_DIR$//demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-api/spring-boot-dubbo-api.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-api/spring-boot-dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/spring-boot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/spring-boot-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/spring-boot-dubbo-provider.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/spring-boot-dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-repository/spring-boot-mongodb-repository.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-repository/spring-boot-mongodb-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-template/spring-boot-mongodb-template.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-template/spring-boot-mongodb-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-multi-mongodb/spring-boot-multi-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-multi-mongodb/spring-boot-multi-mongodb.iml" />
