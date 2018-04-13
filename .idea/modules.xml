@@ -19,6 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-async/springboot-async.iml" filepath="$PROJECT_DIR$/springboot-async/springboot-async.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/springboot-jdbctemplate-multi-druid.iml" filepath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/springboot-jdbctemplate-multi-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/springboot-jdbctemplate-multi-hikariCP.iml" filepath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/springboot-jdbctemplate-multi-hikariCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/springboot-mybatis-mysql-write-read.iml" filepath="$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/springboot-mybatis-mysql-write-read.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-workspace.iml" filepath="$PROJECT_DIR$/.idea/springboot-workspace.iml" />
     </modules>

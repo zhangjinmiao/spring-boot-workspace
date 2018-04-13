@@ -22,6 +22,8 @@
         <module name="spring-boot-redis-session" />
         <module name="springboot-async" />
         <module name="springboot-jdbctemplate-multi-druid" />
+        <module name="springboot-jdbctemplate-multi-hikariCP" />
+        <module name="springboot-mybatis-mysql-write-read" />
         <module name="springboot-redis-1" />
       </profile>
     </annotationProcessing>
@@ -43,6 +45,8 @@
       <module name="springboot-async" target="1.8" />
       <module name="springboot-jdbctemplate-multi" target="1.8" />
       <module name="springboot-jdbctemplate-multi-druid" target="1.8" />
+      <module name="springboot-jdbctemplate-multi-hikariCP" target="1.8" />
+      <module name="springboot-mybatis-mysql-write-read" target="1.7" />
       <module name="springboot-redis-1" target="1.8" />
     </bytecodeTargetLevel>
   </component>

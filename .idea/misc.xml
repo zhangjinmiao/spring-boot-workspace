@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-async/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/pom.xml" />
+        <option value="$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/pom.xml" />
       </list>
     </option>
   </component>

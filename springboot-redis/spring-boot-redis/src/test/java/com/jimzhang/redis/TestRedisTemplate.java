@@ -9,8 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.*;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringRunner.class)
@@ -22,7 +21,10 @@ public class TestRedisTemplate {
     @Test
     public void testString()  {
         redisTemplate.opsForValue().set("neo", "ityouknow");
+        // 会覆盖 ityouknow
         redisTemplate.opsForValue().set("neo", "hello");
+        // zjm 不存在时才设置
+        redisTemplate.opsForValue().setIfAbsent("zjm","123");
         Assert.assertEquals("hello", redisTemplate.opsForValue().get("neo"));
     }
     
@@ -39,8 +41,8 @@ public class TestRedisTemplate {
     public void testExpire() throws InterruptedException {
         User user=new User("ityouknow@126.com", "expire", "youknow", "expire","2020");
         ValueOperations<String, User> operations=redisTemplate.opsForValue();
-        operations.set("expire", user,100,TimeUnit.MILLISECONDS);
-        Thread.sleep(1000);
+        operations.set("expire", user,10000,TimeUnit.MILLISECONDS);
+//        Thread.sleep(1000);
         boolean exists=redisTemplate.hasKey("expire");
         if(exists){
             System.out.println("exists is true");
@@ -66,8 +68,20 @@ public class TestRedisTemplate {
     public void testHash() {
         HashOperations<String, Object, Object> hash = redisTemplate.opsForHash();
         hash.put("hash","you","you");
+        hash.put("hash","my","like");
         String value=(String) hash.get("hash","you");
-        System.out.println("hash value :"+value);
+        System.out.println("获取存储在哈希表中指定字段的值 hash value :"+value);
+        Boolean aBoolean = hash.hasKey("hash", "you");
+        System.out.println("查看哈希表 key 中，指定的字段是否存在:"+aBoolean);
+        List<Object> yous = hash.values("hash");
+        System.out.println("获取哈希表中所有值:" + yous.size());
+        yous.forEach(you-> System.out.println(you));
+        Set<Object> keys = hash.keys("hash");
+        Iterator<Object> iterator = keys.iterator();
+        System.out.println("获取所有哈希表中的字段:"+ keys.size());
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
     }
 
 
@@ -80,7 +94,7 @@ public class TestRedisTemplate {
         list.leftPush(key,"you");
         list.leftPush(key,"know");
         String value=(String)list.leftPop(key);
-        System.out.println("list value :"+value.toString());
+        System.out.println("移除的 list value :"+value.toString());
         // 返回列表 key 中指定区间内的元素
        List<String> values=list.range(key,0,3);
        for (String v:values){
@@ -164,4 +178,47 @@ public class TestRedisTemplate {
         }
     }
 
+
+    /**
+     * 事务操作
+     */
+    @Test
+    public void testTx(){
+
+        HashOperations hashOperations = redisTemplate.opsForHash();
+        HashMap<String,Object> map = new HashMap() {
+            {
+                put("times", 1);
+                put("money", 1000);
+            }
+        };
+        hashOperations.putAll("zhangjm",map);
+
+        Set set = new HashSet();
+        set.add("times");
+        set.add("money");
+        System.out.println("原数据：");
+        List list = new ArrayList();
+        list.add("times");
+        list.add("money");
+        List items = hashOperations.multiGet("zhangjm", list);
+        items.forEach(item -> System.out.println(item));
+        // 或者
+//        Map zhangjm = hashOperations.entries("zhangjm");
+//        zhangjm.forEach((k,v) -> System.out.println("k:" + k +";v:" + v));
+
+        // 开启事务
+        redisTemplate.multi();
+
+        hashOperations.increment("zhangjm", "times", -1);
+        hashOperations.increment("zhangjm", "money", 500);
+
+        // 提交事务
+        List exec = redisTemplate.exec();
+        for (Object v : exec) {
+            System.out.println("修改后"+v);
+        }
+
+
+    }
 }
