@@ -1,6 +1,6 @@
 package com.jimzhang.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
+//import com.alibaba.dubbo.config.annotation.Service;
 import com.jimzhang.constant.Constants;
 import com.jimzhang.model.Email;
 import com.jimzhang.service.IMailService;

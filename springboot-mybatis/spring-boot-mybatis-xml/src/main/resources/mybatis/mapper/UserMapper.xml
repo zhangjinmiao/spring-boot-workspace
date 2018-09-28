@@ -63,7 +63,7 @@
     
     <update id="update" parameterType="com.jimzhang.entity.UserEntity" >
        UPDATE 
-       		users 
+       		users
        SET 
        	<if test="userName != null">userName = #{userName},</if>
        	<if test="passWord != null">passWord = #{passWord},</if>

@@ -1,0 +1,32 @@
+
+1.
+service A  (method A  调用 method B)
+
+#Propagation.REQUIRED
+method A {
+  method B
+
+  update(entityA);
+}
+
+service B
+
+#Propagation.REQUIRED_NEW 或 Propagation.REQUIRED
+method B {
+
+  try{
+      save(entityB);
+  }catch(Exception e){
+
+  }
+}
+
+
+method B #save 抛异常，不影响 method A 的 update 方法。
+
+2
+
+propagation = Propagation.REQUIRED_NEW,rollbackFor = Exception.class
+method B throws Exception{
+  save(entityB);
+}

@@ -4,8 +4,9 @@ import com.jimzhang.entity.UserEntity;
 import com.jimzhang.param.UserParam;
 
 import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
 
-
+@Mapper
 public interface UserMapper {
 
 	List<UserEntity> getAll();
