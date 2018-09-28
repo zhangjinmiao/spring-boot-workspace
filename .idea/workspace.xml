@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af6c5d31-cbdc-426d-8c17-a5efba0ea7b3" name="Default" comment="springboot jdbctemplate druid 多数据源 操作">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-email/src/main/java/com/jimzhang/service/impl/MailServiceImpl2.java" afterPath="$PROJECT_DIR$/springboot-email/src/main/java/com/jimzhang/service/impl/MailServiceImpl2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-email/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/springboot-email/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/src/main/resources/application-oracle.yml" afterPath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/src/main/resources/application-oracle.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-o.yml" afterPath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-o.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-om.yml" afterPath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-om.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/pom.xml" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/SpringBootMybatisXmlApplication.java" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/SpringBootMybatisXmlApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/web/UserController.java" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/java/com/jimzhang/web/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/src/main/resources/mybatis/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-mybatis-xml/target/" />
     <ignored path="$PROJECT_DIR$/springboot-mybatis/target/" />
@@ -64,111 +52,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-swagger1/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-thymeleaf-dudu/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="375">
-                <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <first_editor relative-caret-position="525">
+                <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/read.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-redis/springboot-redis-1/read.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-redis/springboot-redis-1/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-swagger1/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-swagger1/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -212,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/src/main/java/com/jimzhang/entity/Consume.java" />
         <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/src/main/java/com/jimzhang/service/IUserService.java" />
         <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/read.md" />
         <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/pom.xml" />
@@ -263,6 +154,7 @@
         <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-o.yml" />
         <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/src/main/resources/application-om.yml" />
         <option value="$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -775,7 +667,7 @@
       <workItem from="1523519488371" duration="1947000" />
       <workItem from="1523584748287" duration="5184000" />
       <workItem from="1535274664844" duration="1888000" />
-      <workItem from="1538110146320" duration="1139000" />
+      <workItem from="1538110146320" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="springboot mybatis druid 多数据源">
       <created>1518425033908</created>
@@ -848,7 +740,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141754000" />
+    <option name="totallyTimeSpent" value="141775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -1445,8 +1337,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="375">
-            <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <first_editor relative-caret-position="525">
+            <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
