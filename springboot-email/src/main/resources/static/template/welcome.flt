@@ -1,0 +1,11 @@
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h4>亲爱的比特币用户，你好！</h4>
+  
+<p style="color:blue;"> ${content}</p>  
+  
+祝：财源广进！
+  
+</body>  
+</html>  

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-redis-1" />
+        <module name="spring-boot-dubbo-provider" />
+        <module name="springboot-statemachine" />
+        <module name="spring-boot-mybatis-xml" />
+        <module name="spring-boot-quartz" />
+        <module name="spring-boot-redis-data-cache" />
+        <module name="springboot-squirrel-machine" />
+        <module name="springboot-jdbctemplate-multi-druid" />
+        <module name="spring-boot-task" />
+        <module name="spring-boot-mybatis-druid" />
+        <module name="spring-boot-dubbo-consumer" />
+        <module name="spring-boot-mybatis-annotation" />
+        <module name="spring-boot-mongodb-repository" />
+        <module name="springboot-mybatis-mysql-write-read" />
+        <module name="spring-boot-multi-mongodb" />
+        <module name="spring-boot-mongodb-template" />
+        <module name="spring-boot-redis-2" />
+        <module name="springboot-apollo" />
+        <module name="spring-boot-multi-mybatis-druid" />
+        <module name="springboot-jdbctemplate-multi-hikariCP" />
+        <module name="spring-boot-dubbo-api" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="springboot-apollo-referce-log" />
+        <module name="spring-boot-redis-session" />
+        <module name="springboot-async" />
+        <module name="springboot-task" />
+        <module name="spring-boot-redis-2.x" />
+        <module name="spring-boot-redis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-dubbo-api" target="1.8" />
+      <module name="spring-boot-dubbo-consumer" target="1.8" />
+      <module name="spring-boot-dubbo-provider" target="1.8" />
+      <module name="spring-boot-mongodb-repository" target="1.8" />
+      <module name="spring-boot-mongodb-template" target="1.8" />
+      <module name="spring-boot-multi-mongodb" target="1.8" />
+      <module name="spring-boot-multi-mybatis-druid" target="1.8" />
+      <module name="spring-boot-mybatis-annotation" target="1.8" />
+      <module name="spring-boot-mybatis-druid" target="1.8" />
+      <module name="spring-boot-mybatis-xml" target="1.8" />
+      <module name="spring-boot-quartz" target="1.8" />
+      <module name="spring-boot-rabbitmq" target="1.8" />
+      <module name="spring-boot-redis" target="1.8" />
+      <module name="spring-boot-redis-2" target="1.8" />
+      <module name="spring-boot-redis-2.x" target="1.8" />
+      <module name="spring-boot-redis-data-cache" target="1.8" />
+      <module name="spring-boot-redis-session" target="1.8" />
+      <module name="spring-boot-task" target="1.8" />
+      <module name="springboot-apollo" target="1.8" />
+      <module name="springboot-apollo-referce-log" target="1.8" />
+      <module name="springboot-async" target="1.8" />
+      <module name="springboot-jdbctemplate-multi" target="1.8" />
+      <module name="springboot-jdbctemplate-multi-druid" target="1.8" />
+      <module name="springboot-jdbctemplate-multi-hikariCP" target="1.8" />
+      <module name="springboot-mybatis-mysql-write-read" target="1.7" />
+      <module name="springboot-redis-1" target="1.8" />
+      <module name="springboot-squirrel-machine" target="1.8" />
+      <module name="springboot-statemachine" target="1.8" />
+      <module name="springboot-task" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-quartz" options="-parameters" />
+      <module name="spring-boot-rabbitmq" options="-parameters" />
+      <module name="spring-boot-redis-2.x" options="-parameters" />
+      <module name="spring-boot-task" options="-parameters" />
+      <module name="springboot-apollo" options="-parameters" />
+      <module name="springboot-apollo-referce-log" options="-parameters" />
+      <module name="springboot-async" options="-parameters" />
+      <module name="springboot-squirrel-machine" options="-parameters" />
+      <module name="springboot-statemachine" options="-parameters" />
+      <module name="springboot-task" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dynamic-add-remove-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-druid-mybatis-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-jdbc-template-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-mybatis-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-mybatisplus2-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-mybatisplus3-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-nest-sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-spel-sample" charset="UTF-8" />
+  </component>
+</project>

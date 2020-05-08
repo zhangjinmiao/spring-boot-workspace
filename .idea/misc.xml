@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-multi-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/springboot-redis-1/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-repository/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-template/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mongodb/spring-boot-multi-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jdbctemplate-multi/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-async/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/pom.xml" />
+        <option value="$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/spring-boot-redis-2.x/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-statemachine/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-squirrel-machine/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-apollo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-apollo-referce-log/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-task/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-task/spring-boot-task/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-task/spring-boot-quartz/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dynamic-add-remove-datasource" />
+        <module name="dynamic-druid-mybatis-sample" />
+        <module name="dynamic-jdbc-template-sample" />
+        <module name="dynamic-mybatis-sample" />
+        <module name="dynamic-mybatisplus2-sample" />
+        <module name="dynamic-mybatisplus3-sample" />
+        <module name="dynamic-nest-sample" />
+        <module name="dynamic-spel-sample" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dynamic-add-remove-datasource" target="1.8" />
+      <module name="dynamic-druid-mybatis-sample" target="1.8" />
+      <module name="dynamic-jdbc-template-sample" target="1.8" />
+      <module name="dynamic-mybatis-sample" target="1.8" />
+      <module name="dynamic-mybatisplus2-sample" target="1.8" />
+      <module name="dynamic-mybatisplus3-sample" target="1.8" />
+      <module name="dynamic-nest-sample" target="1.8" />
+      <module name="dynamic-spel-sample" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

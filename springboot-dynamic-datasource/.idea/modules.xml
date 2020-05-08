@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dynamic-add-remove-datasource/dynamic-add-remove-datasource.iml" filepath="$PROJECT_DIR$/dynamic-add-remove-datasource/dynamic-add-remove-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-druid-mybatis-sample/dynamic-druid-mybatis-sample.iml" filepath="$PROJECT_DIR$/dynamic-druid-mybatis-sample/dynamic-druid-mybatis-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-jdbc-template-sample/dynamic-jdbc-template-sample.iml" filepath="$PROJECT_DIR$/dynamic-jdbc-template-sample/dynamic-jdbc-template-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-mybatis-sample/dynamic-mybatis-sample.iml" filepath="$PROJECT_DIR$/dynamic-mybatis-sample/dynamic-mybatis-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-mybatisplus2-sample/dynamic-mybatisplus2-sample.iml" filepath="$PROJECT_DIR$/dynamic-mybatisplus2-sample/dynamic-mybatisplus2-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-mybatisplus3-sample/dynamic-mybatisplus3-sample.iml" filepath="$PROJECT_DIR$/dynamic-mybatisplus3-sample/dynamic-mybatisplus3-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-nest-sample/dynamic-nest-sample.iml" filepath="$PROJECT_DIR$/dynamic-nest-sample/dynamic-nest-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic-spel-sample/dynamic-spel-sample.iml" filepath="$PROJECT_DIR$/dynamic-spel-sample/dynamic-spel-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-dynamic-datasource.iml" filepath="$PROJECT_DIR$/.idea/springboot-dynamic-datasource.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+关闭调试信息
+自动扫描配置改动, 默认每16/pointcut, 30秒延迟
+ -->
+<configuration debug="false" scan="false" scanPeriod="30 seconds">
+    <!--日志格式应用spring boot默认的格式，也可以自己更改-->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <!--控制台，日志输出格式-->
+    <property name="FILE_LOG_PATTERN"
+              value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-140.140logger{139}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+    <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{100} - %msg%n" />
+    <!-- 日志文件名称 ${project.artifactId} 没取到-->
+    <property name="LOG_NAME" value="${project.artifactId}"/>
+    <property name="LOG_DIR" value="${LOG_NAME}/%d{yyyyMMdd}"/>
+
+    <!-- 文件大小，默认为50MB-->
+    <property name="MAX_FILE_SIZE" value="50MB"/>
+
+    <springProperty name="ENV" source="log.test.profile-env" defaultValue="dev"/>
+    <springProperty name="BASE_HOME" source="log.test.dir" defaultValue="logs"/>
+    <springProperty name="CONSOLE_LEVEL" source="log.test.console-level" defaultValue="info"/>
+    <springProperty name="DEBUG_ENABLED" source="log.test.file.debug-enabled" defaultValue="false"/>
+    <!-- 配置日志的滚动时间，保存时间为30天-->
+    <springProperty name="MAX_HISTORY" source="log.file.max-history" defaultValue="30"/>
+
+    <!-- 控制台输出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{100} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${CONSOLE_LEVEL}</level>
+        </filter>
+    </appender>
+
+    <!-- 本地不输出日志 -->
+    <if condition='"${ENV}"=="dev" &amp; "${BASE_HOME}"!=""'>
+        <then>
+            <!-- 打印所有日志，保存到文件-->
+            <appender name="FILE_ALL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${BASE_HOME}/${LOG_NAME}/all_${LOG_NAME}.log</file>
+                <!-- 设置滚动策略，当日志文件大小超过${MAX_FILE_SIZE}时，新的日志内容写到新的日志文件-->
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- 新的日志文件路径名称，%d:日期 %i:i是变量 -->
+                    <fileNamePattern>${BASE_HOME}/${LOG_DIR}/all_back/%d{yyyyMMdd}.%i.log</fileNamePattern>
+                    <!-- 保存日志15天 -->
+                    <maxHistory>${MAX_HISTORY}</maxHistory>
+                    <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                        <!-- 日志文件的最大大小 -->
+                        <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+                    </timeBasedFileNamingAndTriggeringPolicy>
+                </rollingPolicy>
+                <!-- 格式日志文件内容-->
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>${LOG_PATTERN}</pattern>
+                </layout>
+                <!--输出日志级别 >= info-->
+                <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                    <level>${CONSOLE_LEVEL}</level>
+                </filter>
+            </appender>
+
+
+            <!-- 打印告警日志，保存到文件-->
+            <appender name="FILE_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${BASE_HOME}/${LOG_NAME}/warn_${LOG_NAME}.log</file>
+                <!-- 设置滚动策略，当日志文件大小超过${MAX_FILE_SIZE}时，新的日志内容写到新的日志文件-->
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- 新的日志文件路径名称，%d:日期 %i:i是变量 -->
+                    <fileNamePattern>${BASE_HOME}/${LOG_DIR}/warn_back/%d{yyyyMMdd}.%i.log</fileNamePattern>
+                    <!-- 保存日志15天 -->
+                    <maxHistory>${MAX_HISTORY}</maxHistory>
+                    <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                        <!-- 日志文件的最大大小 -->
+                        <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+                    </timeBasedFileNamingAndTriggeringPolicy>
+                </rollingPolicy>
+                <!-- 格式日志文件内容-->
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>${LOG_PATTERN}</pattern>
+                </layout>
+                <!-- 此日志文件只记录告警级别的  过滤器级别 DENY 抛弃，NEUTRAL 下个过滤器，ACCEPT 执行-->
+                <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                    <level>warn</level>
+                    <onMatch>ACCEPT</onMatch> <!--符合条件-->
+                    <onMismatch>DENY</onMismatch> <!--不符合条件-->
+                </filter>
+            </appender>
+
+            <!-- 打印错误日志，保存到文件-->
+            <appender name="FILE_ERR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${BASE_HOME}/${LOG_NAME}/err_${LOG_NAME}.log</file>
+                <!-- 设置滚动策略，当日志文件大小超过${MAX_FILE_SIZE}时，新的日志内容写到新的日志文件-->
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- 新的日志文件路径名称，%d:日期 %i:i是变量 -->
+                    <fileNamePattern>${BASE_HOME}/${LOG_DIR}/error_back/%d{yyyyMMdd}.%i.log</fileNamePattern>
+                    <!-- 保存日志15天 -->
+                    <maxHistory>${MAX_HISTORY}</maxHistory>
+                    <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                        <!-- 日志文件的最大大小 -->
+                        <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+                    </timeBasedFileNamingAndTriggeringPolicy>
+                </rollingPolicy>
+                <!-- 格式日志文件内容-->
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>${LOG_PATTERN}</pattern>
+                </layout>
+                <!-- 此日志文件只记录error级别的 -->
+                <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                    <level>error</level>
+                    <onMatch>ACCEPT</onMatch>
+                    <onMismatch>DENY</onMismatch>
+                </filter>
+            </appender>
+
+            <root>
+                <appender-ref ref="FILE_ALL"/>
+                <appender-ref ref="FILE_WARN"/>
+                <appender-ref ref="FILE_ERR"/>
+            </root>
+
+            <!-- 按照每天生成日志文件 -->
+            <!--动态开启debug-->
+            <if condition='"${DEBUG_ENABLED}"=="true"'>
+                <then>
+                    <appender name="FILE_DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                        <file>${BASE_HOME}/${LOG_NAME}/debug_${LOG_NAME}.log</file>
+                        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                            <!-- 新的日志文件路径名称，%d:日期 %i:i是变量 -->
+                            <fileNamePattern>${BASE_HOME}/${LOG_DIR}/debug_back/%d{yyyyMMdd}.%i.log</fileNamePattern>
+                            <!-- 保存日志15天 -->
+                            <maxHistory>${MAX_HISTORY}</maxHistory>
+                            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                                <!-- 日志文件的最大大小 -->
+                                <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+                            </timeBasedFileNamingAndTriggeringPolicy>
+                        </rollingPolicy>
+                        <layout class="ch.qos.logback.classic.PatternLayout">
+                            <pattern>${LOG_PATTERN}</pattern>
+                        </layout>
+                        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                            <level>DEBUG</level>
+                        </filter>
+                    </appender>
+                    <root>
+                        <appender-ref ref="FILE_DEBUG"/>
+                    </root>
+                </then>
+            </if>
+        </then>
+    </if>
+
+
+
+    <root>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+
+</configuration>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>用户列表--<a href="/logout">退出登录</a></h1>
+<h2>权限列表</h2>
+<shiro:authenticated>用户已经登录显示此内容<br/></shiro:authenticated>
+<br/>
+<shiro:hasRole name="admin">admin<br/></shiro:hasRole>
+<shiro:hasRole name="vip">vip<br/></shiro:hasRole>
+<shiro:hasRole name="normal">normal角色登录显示此内容<br/></shiro:hasRole>
+<br/>
+
+<shiro:hasAnyRoles name="vip,admin">vip or admin 角色用户登录显示此内容<br/></shiro:hasAnyRoles>
+<br/>
+<shiro:principal/>
+-显示当前登录用户名<br/><br/>
+<shiro:hasPermission name="userInfo:add">userInfo:add权限用户显示此内容<br/></shiro:hasPermission>
+<shiro:hasPermission name="userInfo:view">userInfo:view权限用户显示此内容<br/></shiro:hasPermission>
+<shiro:lacksPermission name="userInfo:del">不具有userInfo:del权限的用户显示此内容 <br/></shiro:lacksPermission>
+<div shiro:hasPermission="userInfo:add">
+   有add 权限
+</div>
+<br/>所有用户列表：<br/>
+<ul>
+    <div th:each="user : ${list}">
+        <li>用户名：<span th:text="${user.username }"></span>----密码：<span th:text="${user.password }"></span>----
+
+            <shiro:hasPermission name="userInfo:edit"><a th:href="@{/userInfo/userDel/{uid}(uid=${user.uid})} ">修改用户</a></shiro:hasPermission>
+        </li>
+    </div>
+</ul>
+</body>
+</html>

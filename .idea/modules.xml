@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$//demo.iml" filepath="$PROJECT_DIR$//demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-api/spring-boot-dubbo-api.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-api/spring-boot-dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/spring-boot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-consumer/spring-boot-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/spring-boot-dubbo-provider.iml" filepath="$PROJECT_DIR$/springboot-dubbo/spring-boot-dubbo/spring-boot-dubbo-provider/spring-boot-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-repository/spring-boot-mongodb-repository.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-repository/spring-boot-mongodb-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-template/spring-boot-mongodb-template.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-mongodb-template/spring-boot-mongodb-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/spring-boot-multi-mongodb/spring-boot-multi-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/spring-boot-multi-mongodb/spring-boot-multi-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/spring-boot-multi-mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-multi-mybatis-druid/spring-boot-multi-mybatis-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-druid/spring-boot-mybatis-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" filepath="$PROJECT_DIR$/springboot-mybatis/spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-task/spring-boot-quartz/spring-boot-quartz.iml" filepath="$PROJECT_DIR$/springboot-task/spring-boot-quartz/spring-boot-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-2.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-2.x/spring-boot-redis-2.x.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-2.x/spring-boot-redis-2.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/spring-boot-redis-data-cache.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-data-cache/spring-boot-redis-data-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" filepath="$PROJECT_DIR$/springboot-redis/spring-boot-redis-session/spring-boot-redis-session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-task/spring-boot-task/spring-boot-task.iml" filepath="$PROJECT_DIR$/springboot-task/spring-boot-task/spring-boot-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-apollo/springboot-apollo.iml" filepath="$PROJECT_DIR$/springboot-apollo/springboot-apollo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-apollo-referce-log/springboot-apollo-referce-log.iml" filepath="$PROJECT_DIR$/springboot-apollo-referce-log/springboot-apollo-referce-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-async/springboot-async.iml" filepath="$PROJECT_DIR$/springboot-async/springboot-async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/springboot-jdbctemplate-multi-druid.iml" filepath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-druid/springboot-jdbctemplate-multi-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/springboot-jdbctemplate-multi-hikariCP.iml" filepath="$PROJECT_DIR$/springboot-jdbctemplate/springboot-jdbctemplate-multi-hikariCP/springboot-jdbctemplate-multi-hikariCP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/springboot-mybatis-mysql-write-read.iml" filepath="$PROJECT_DIR$/Springboot-Mybatis-Read-Write-Splitting-master/springboot-mybatis-mysql-write-read.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis-1/springboot-redis-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-squirrel-machine/springboot-squirrel-machine.iml" filepath="$PROJECT_DIR$/springboot-squirrel-machine/springboot-squirrel-machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-statemachine/springboot-statemachine.iml" filepath="$PROJECT_DIR$/springboot-statemachine/springboot-statemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-task/springboot-task.iml" filepath="$PROJECT_DIR$/springboot-task/springboot-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-workspace.iml" filepath="$PROJECT_DIR$/.idea/springboot-workspace.iml" />
+    </modules>
+  </component>
+</project>

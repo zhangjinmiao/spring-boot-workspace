@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/dynamic-mybatisplus3-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-mybatis-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-jdbc-template-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-druid-mybatis-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-add-remove-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-mybatisplus2-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-nest-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-spel-sample/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

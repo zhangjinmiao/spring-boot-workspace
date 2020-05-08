@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.real.springboot.dao.UserMapper">
+ 
+<select id="query"  resultType="com.real.springboot.domain.User">
+    select id ,name as user_name
+    from students
+    where 1=1
+    <if test="userName != null">
+      and name like CONCAT('%',#{userName},'%')
+    </if>
+</select>
+</mapper>

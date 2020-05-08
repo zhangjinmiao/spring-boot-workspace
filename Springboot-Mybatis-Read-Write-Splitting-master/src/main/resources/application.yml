@@ -1,0 +1,74 @@
+logging:
+  config: classpath:logback.xml
+  path: d:/logs
+server:
+  port: 80
+  session-timeout: 60
+
+
+mybatis:
+     mapperLocations: classpath:/com/real/springboot/dao/*.xml
+     typeAliasesPackage: com.real.springboot.dao
+     mapperScanPackage: com.real.springboot.dao
+     configLocation: classpath:/mybatis-config.xml
+
+mysql:
+    datasource:
+        readSize: 2  #读库个数
+        type: com.alibaba.druid.pool.DruidDataSource
+        mapperLocations: classpath:/com/real/springboot/dao/*.xml
+        configLocation: classpath:/mybatis-config.xml
+        typeAliasesPackage: com.real.springboot.dao
+        write:
+           url: jdbc:mysql://127.0.0.1:3306/test1?useUnicode=true&amp;characterEncoding=utf-8
+           username: root
+           password: 123456
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat
+        read:
+           - url: jdbc:mysql://127.0.0.1:3306/test1?useUnicode=true&amp;characterEncoding=utf-8
+             username: root
+             password: 123456
+             minIdle: 5
+             maxActive: 100
+             initialSize: 10
+             maxWait: 60000
+             timeBetweenEvictionRunsMillis: 60000
+             minEvictableIdleTimeMillis: 300000
+             validationQuery: select 'x'
+             testWhileIdle: true
+             testOnBorrow: false
+             testOnReturn: false
+             poolPreparedStatements: true
+             maxPoolPreparedStatementPerConnectionSize: 50
+             removeAbandoned: true
+             filters: stat
+           - url: jdbc:mysql://127.0.0.1:3306/test2?useUnicode=true&amp;characterEncoding=utf-8
+             username: root
+             password: 123456
+             minIdle: 5
+             maxActive: 100
+             initialSize: 10
+             maxWait: 60000
+             timeBetweenEvictionRunsMillis: 60000
+             minEvictableIdleTimeMillis: 300000
+             validationQuery: select 'x'
+             testWhileIdle: true
+             testOnBorrow: false
+             testOnReturn: false
+             poolPreparedStatements: true
+             maxPoolPreparedStatementPerConnectionSize: 50
+             removeAbandoned: true
+             filters: stat
